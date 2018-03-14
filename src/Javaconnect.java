@@ -18,7 +18,7 @@ public class Javaconnect {
 public static Connection connecrDb(){
     try{
     Class.forName("org.sqlite.JDBC");
-    Connection conn=DriverManager.getConnection("jdbc:sqlite:C:\\Users\\prtk\\Documents\\NetBeansProjects\\Online Exam pro\\OnlineExamPro.sqlite");
+    Connection conn=DriverManager.getConnection("jdbc:sqlite:/home/prtk/Desktop/OnlineExamPro/OnlineExamPro.sqlite");
     return conn;
             }
         catch(Exception e){
